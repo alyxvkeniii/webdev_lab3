@@ -1,0 +1,204 @@
+.cute-font {
+    font-family: 'Baloo 2', sans-serif;
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ffe6f3, #fffbc5, #ffe6f3);
+}
+
+/* Header and Navigation */
+header {
+    display: flex;
+    align-items: center;
+    background-color: #ff9fbf;
+    color: #fff;
+    padding: 5px 15px;
+}
+
+header .logo img {
+    height: 90px; /* Smaller logo */
+    margin-right: 340px;
+    margin-bottom: -10px;
+    margin-top: -15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+    font-size: 15px;
+}
+
+header nav ul li a:hover {
+    background-color: #95e6ffce;
+    border-radius: 10%;
+}
+
+header nav ul li a:active {
+    background-color: rgb(0, 0, 0);
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+/* Newsfeed Styles */
+.newsfeed-container {
+    width: 60%;
+    max-width: 800px; /* Added max-width for better responsiveness */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+}
+
+header h1 {
+    font-size: 2em;
+    color: #ffffff;
+    text-align: center; /* Centered header for better alignment */
+}
+
+.post-btn {
+    background-color: #ff66b2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1em;
+    margin: 10px 0; /* Added margin for spacing */
+    transition: background-color 0.3s ease; /* Added transition for hover effect */
+}
+
+.post-btn:hover {
+    background-color: #ff99cc; /* Hover effect for the button */
+}
+
+.post {
+    background-color: #ffe6f0;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.username {
+    font-weight: bold;
+    color: #ff66b2;
+    text-decoration: none; /* Make username a link */
+}
+
+.post-date {
+    font-size: 0.9em;
+    color: #999; /* Grey color for date */
+    margin-left: 10px;
+}
+
+.post-content p {
+    color: #4d4d4d;
+    font-size: 1em;
+}
+
+.cat-photo {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.post-actions {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.like-btn,
+.comment-btn,
+.share-btn {
+    background-color: #ff99cc;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    color: white;
+    transition: background-color 0.3s ease; /* Added transition for buttons */
+}
+
+.like-btn:hover,
+.comment-btn:hover,
+.share-btn:hover {
+    background-color: #ff66b2;
+}
+
+/* Comments Section */
+.comments-section {
+    margin-top: 10px;
+    padding: 10px 0;
+    border-top: 1px solid #eee; /* Light border for separation */
+}
+
+.comment-input {
+    width: 80%;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #ccc; /* Light border */
+    margin-top: 10px;
+}
+
+/* Trending Topics */
+.trending-topics {
+    margin-top: 30px;
+    background-color: #ffe6f0;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.trending-topics h2 {
+    font-size: 1.5em;
+    color: #ff66b2;
+}
+
+.trending-topics ul {
+    list-style: none;
+    padding: 0;
+}
+
+.trending-topics li {
+    padding: 5px 0;
+}
+
+/* Footer */
+footer {
+    background-color: #ff9fbf;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}

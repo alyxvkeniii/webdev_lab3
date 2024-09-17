@@ -26,6 +26,7 @@
                     <li><a href="{{ url('/about') }}" class="button">About</a></li>
                     <li><a href="{{ url('/content') }}"class="button">Content</a></li>
                     <li><a href="{{ url('/contact') }}" class="button">Contact</a></li>
+                    <li><a href="{{ url('/newsfeed') }}" class="button">Newsfeed</a></li>
                 </ul>
             </nav>
         </header>

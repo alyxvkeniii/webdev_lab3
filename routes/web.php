@@ -25,3 +25,8 @@ Route::post('/contact', function () {
     Mail::to('mingkai103019@gmail.com')->send(new ContactMe($data));
     return redirect('/contact')->with('flash', 'Message Sent Successfully');
 });
+
+Route::get('/newsfeed', function () {
+    return view('newsfeed');
+});
+// for the newsfeed
