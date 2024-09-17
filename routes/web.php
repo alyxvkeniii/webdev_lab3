@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\ContactMe;
+use App\Http\Controllers\NewsfeedController;
 
 Route::get('/', function () {
     return view('homepage');
@@ -26,7 +27,6 @@ Route::post('/contact', function () {
     return redirect('/contact')->with('flash', 'Message Sent Successfully');
 });
 
-Route::get('/newsfeed', function () {
-    return view('newsfeed');
-});
+// Route with category parameter
+Route::get('/newsfeed/{category?}', [NewsfeedController::class, 'showNewsfeed']);
 // for the newsfeed
